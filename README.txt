@@ -1,4 +1,7 @@
-<pre>
+[The following is a dump of my terminal demonstrating that the version upgrade from 1.6.9 to 1.6.10 
+ somehow changed the behavior of "load_resource" causing an error to occur when used with an optional
+ parameter that loads a model not named the same as the controller's base name. In this case loading
+ the user object in the "heck" controller.]
 host:~/code/cc_test> bundle
 Using rake (10.0.4) 
 Using i18n (0.6.1) 
@@ -176,5 +179,3 @@ Resolution:
 2 tests, 0 assertions, 0 failures, 1 errors, 0 skips
 Errors running test:functionals! #<RuntimeError: Command failed with status (1): [ruby -I"lib:test" -I"/Users/user/.rvm/gems/ruby-1.9.3-p327/gems/rake-10.0.4/lib" "/Users/user/.rvm/gems/ruby-1.9.3-p327/gems/rake-10.0.4/lib/rake/rake_test_loader.rb" "test/functional/**/*_test.rb" ]>
 host:~/code/cc_test> 
-
-</pre>
