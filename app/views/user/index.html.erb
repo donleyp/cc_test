@@ -1,0 +1,7 @@
+<p>
+	<% if @user %>
+		user: <%= @user.email %>
+	<% else  %>
+		current user: <%= current_user.email %>
+	<% end %>
+</p>
